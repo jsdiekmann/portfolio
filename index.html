@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jared's Portfolio Website</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <header>
+        <nav>
+            <h2 class="name">Jared Diekmann</h2>
+            <a href="#">HOME</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+    </header>
+    <div class="about_me_container">
+        <div class="about_me_text">
+            <h2>About Me</h2>
+            <p>Hi! My name is Jared and I am an experienced service profesional, looking to transition in to the software engineering world! I started my career as a high school football coach and teacher. I then began chasing my dream of being a college football coach. <br> <br> My girlfriend at the time (now wife) and I packed up and moved to Chicago, where I was the tight ends coach at Division III Elmhurst College. From there, the chase led us to beautiful Cape Girardeau, Missouri. <br> <br> Slowly, I began to realize that my 22 year old dream of becoming a big time college football coach, was no longer the dream of my 32 year old self. Fast forward 4 years and the joy I get from solving puzzles has led me to the world of software engineering!</p>
+        </div>
+        <img src="images/groovin.jpg">
+    </div>
+    <div class="projects_container">
+        <div class="project_1">
+            <h3>Quote Generator</h3>
+            <input type="text" id="user_name" placeholder="What's your name?"> <br> <br>
+            <button id="btn1">Submit</button>
+            <p id="output"></p>
+            <script src="quotes.js"></script>
+        </div> 
+        <div class="project_2">
+            <h3>Rock, Paper, Scissors</h3>
+            <div class="scoreboard">
+                <h4 id="userScore">You: 0</h4>
+                <h4 id="cpuScore">Opponent: 0</h4>
+            </div>
+            <label for="userOptions">Rock, Paper, Scissors...Shoot!</label>
+            <br> <br>
+            <select name="userOptions" id="userChoice">
+                <option value="Rock">Rock</option>
+                <option value="Paper">Paper</option>
+                <option value="Scissors">Scissors</option>
+            </select>
+            <br> <br>
+            <button id="btn2">Submit</button>
+            <p id="choices"></p>
+            <div class="choicePics" id="choicePics">
+                <img id="userPic" hidden>
+                <img id="cpuPic" hidden>
+            </div>
+            <p id="outcome" hidden></p>
+            <script src="rps.js"></script>
+        </div>
+        <div class="project_3">
+            <h3>Project 3</h3>
+        </div>
+    </div>
+    <footer>
+        <h3>Jared Diekmann Appreciates You!</h3>
+    </footer>
+</body>
+</html>
